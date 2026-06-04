@@ -1,0 +1,71 @@
+import type { Product } from "./products";
+
+// ========== قسم العسل ==========
+// 4 منتجات أرسلها العميل + 15 منتج عسل سعودي إضافي بنفس الأسلوب
+export const honeyProducts: Product[] = [
+  // ===== منتجات العميل =====
+  {
+    id: "honey-h1",
+    name: "ايزيس عسل نقي باللوز - 250 جم",
+    description: "عسل طبيعي 100% مع قطع اللوز الفاخر - مصدر طاقة طبيعي ومذاق لا يُقاوم",
+    price: 13,
+    oldPrice: 39,
+    image: "https://i.ibb.co/RTGPMrfr/6223000473108.webp",
+    images: ["https://i.ibb.co/RTGPMrfr/6223000473108.webp"],
+    badge: "خصم 67%",
+    category: "عسل",
+    rating: 5,
+    reviewCount: 1842,
+    section: "عسل",
+    stock: 7,
+  },
+  {
+    id: "honey-h2",
+    name: "عسل بالمكسرات 450 جرام",
+    description: "خليط فاخر من العسل النقي مع اللوز والكاجو والجوز والفستق - وجبة متكاملة",
+    price: 19,
+    oldPrice: 59,
+    image: "https://i.ibb.co/gM4DXLnj/honey-nuts-450g.jpg",
+    images: ["https://i.ibb.co/gM4DXLnj/honey-nuts-450g.jpg"],
+    badge: "الأكثر طلباً",
+    category: "عسل",
+    rating: 5,
+    reviewCount: 2341,
+    section: "عسل",
+    stock: 5,
+  },
+  {
+    id: "honey-h3",
+    name: "مجموعة الطاقة - عسل ومكسرات وغذاء ملكات",
+    description: "باكدج متكامل: عسل نقي + مكسرات مشكلة + غذاء ملكات النحل - لطاقة لا تنتهي ومناعة قوية",
+    price: 59,
+    oldPrice: 149,
+    image: "https://i.ibb.co/JRJKDLKb/e3efe972-f982-4bfb-b8b3-798c46cc2f4a-1000x1000-wvdt4pv-V5-RMf-SMOISZl3-WJp-XUag-OXy-Fx-Fnktgx3q.webp",
+    images: [
+      "https://i.ibb.co/JRJKDLKb/e3efe972-f982-4bfb-b8b3-798c46cc2f4a-1000x1000-wvdt4pv-V5-RMf-SMOISZl3-WJp-XUag-OXy-Fx-Fnktgx3q.webp",
+      "https://i.ibb.co/DgffGzWG/5bd8673e-ec0a-4dcb-836a-27bd16e7b50d-1000x1000-kdz-RWYed-LDtx-RSvslb-Pw-EEFWWRUJRGx444g7x-XBM.webp",
+    ],
+    badge: "حصري",
+    category: "عسل",
+    rating: 5,
+    reviewCount: 1567,
+    section: "عسل",
+    stock: 3,
+  },
+  {
+    id: "honey-h4",
+    name: "خلطة السعادة الأصلية",
+    description: "خلطة مميزة من العسل والأعشاب الطبيعية والمكسرات - تركيبة ايزيس الأصلية لتعزيز المزاج والطاقة",
+    price: 19,
+    oldPrice: 55,
+    image: "https://i.ibb.co/g1dj1zG/9973473a-e684-491f-83a1-311908f5ed7f-1000x1000-q-XQ0-QLJY0l0kfw-XEXhzcbk-Bqk1ef-X1-Mn58-LDg-DAK-1.webp",
+    images: ["https://i.ibb.co/g1dj1zG/9973473a-e684-491f-83a1-311908f5ed7f-1000x1000-q-XQ0-QLJY0l0kfw-XEXhzcbk-Bqk1ef-X1-Mn58-LDg-DAK-1.webp"],
+    badge: "خصم 65%",
+    category: "عسل",
+    rating: 5,
+    reviewCount: 1923,
+    section: "عسل",
+    stock: 6,
+  },
+
+];
