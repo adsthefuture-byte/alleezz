@@ -198,6 +198,28 @@ const ProductDetail = () => {
               اشتري الآن
             </button>
 
+            {product.reviews && product.reviews.length > 0 && (
+              <div className="mt-6 rounded-2xl border border-border bg-secondary p-5 text-right shadow-sm">
+                <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+                  <div>
+                    <p className="text-base font-semibold text-foreground">آراء العملاء</p>
+                    <p className="text-xs text-muted-foreground">آخر التجارب السعودية بـ {product.reviews.length} رأي</p>
+                  </div>
+                  <div className="inline-flex items-center gap-2 rounded-full bg-background/80 px-3 py-1 text-xs font-semibold text-foreground border border-border">
+                    {product.rating?.toFixed(1)} ★  تقييم خلالي
+                  </div>
+                </div>
+                <div className="mt-4 grid gap-3 sm:grid-cols-2">
+                  {product.reviews.map((review, idx) => (
+                    <div key={idx} className="rounded-xl bg-background p-4 border border-border">
+                      <p className="text-sm font-semibold text-foreground">{review.name} <span className="text-muted-foreground">{review.location}</span></p>
+                      <p className="mt-2 text-sm leading-6 text-muted-foreground">“{review.comment}”</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
             {/* Features */}
             <div className="mt-8 space-y-3 border-t border-border pt-6">
               <div className="flex items-center gap-3 justify-end text-sm text-muted-foreground">

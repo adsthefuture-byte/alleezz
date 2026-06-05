@@ -17,6 +17,11 @@ export interface Product {
   category: string;
   rating?: number;
   reviewCount?: number;
+  reviews?: {
+    name: string;
+    location: string;
+    comment: string;
+  }[];
   stock?: number;
   section: "مكياج" | "عطور" | "شنط" | "أدوات منزلية" | "أثاث مكتبي" | "جوالات" | "طاولات سفرة" | "طاولات خارجية" | "لابتوبات" | "شاشات" | "سماعات" | "شواحن" | "ساعات" | "منوعات" | "عسل";
 }
